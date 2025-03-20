@@ -26,13 +26,12 @@ videoPlaybackProxy.get("/", async (c) => {
         const { data: encryptedQuery } = c.req.query();
         const decryptedQueryParams = decryptQuery(encryptedQuery, config);
         const parsedDecryptedQueryParams = new URLSearchParams(
-            decryptedQueryParams,
+            JSON.parse(decryptedQueryParams),
         );
-        parsedDecryptedQueryParams.forEach((k, v) => {
-            queryParams.set(v, k);
-        });
         queryParams.delete("enc");
         queryParams.delete("data");
+        queryParams.set("pot", parsedDecryptedQueryParams.get("pot") as string)
+        queryParams.set("ip", parsedDecryptedQueryParams.get("ip") as string)
     }
 
     if (host == undefined || !/[\w-]+.googlevideo.com/.test(host)) {
