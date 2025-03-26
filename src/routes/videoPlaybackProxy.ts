@@ -19,9 +19,9 @@ const { getFetchClient } = await import(getFetchClientLocation);
 const videoPlaybackProxy = new Hono();
 
 videoPlaybackProxy.get("/", async (c) => {
-    const config = c.get("config");
-    const { host, c: client, expire } = c.req.query();
+    const { host, c: client, expire, title } = c.req.query();
     const urlReq = new URL(c.req.url);
+    const config = c.get("config");
     const queryParams = new URLSearchParams(urlReq.search);
 
     if (c.req.query("enc") === "true") {
