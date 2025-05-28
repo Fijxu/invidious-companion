@@ -207,43 +207,43 @@ export class Metrics {
 
         // deno-fmt-ignore
         const map: { [key: string]: keyof Error } = {
-            // Youtube blockage
-                "Sign in to confirm you’re not a bot": "signInToConfirmBot",
-            // Age restricted videos
-                "Sign in to confirm your age": "signInToConfirmAge",
-            // Sensitive content videos
-                "The following content may contain suicide or self-harm topics": "selfHarmTopics",
-            // Livestreams
-                "Offline.": "liveStreamOffline",
-                "This live event will begin in": "liveEventWillBegin",
-                "This live stream recording is not available": "liveStreamRecordingUnavailable",
-            // Premieres
-                "Premiere will begin shortly": "premiere",
-                "Premieres in": "premiere",
-            // Private videos
-                "Private video": "privateVideo", // WEB Client
-                "This video is private": "privateVideo", // MWEB Client
-            // Unavailable videos
-                "Video unavailable": "videoUnavailable", // WEB Client
-                "This video is unavailable": "videoUnavailable", // MWEB Client
-                "This video is no longer available due to a copyright claim": "videoUnavailableCopyrightClaim", // Unknown client
-                "This video is no longer available because the uploader has closed their YouTube account": "videoUnavailableClosedYTAccount", // Unknown client
-                "This content can't be played on your mobile browser. Get the YouTube app to start watching": "videoUnplayableMobileBrowser", // MWEB Client maybe?
-            // Removed videos
-                // Videos removed because of a violation of the community guidelines or TOS
-                "This video has been removed for violating YouTube's": "videoRemovedYt", // Unknown client
-                "This video has been removed by the uploader": "videoRemovedUploader", // Unknown client
-            // Members only
-                "This video is available to this channel's members on level": "membersOnlyVideo", // Unknown client
-                "Join this channel from your computer or Android app to get access to members-only content like this video": "membersOnlyVideo", // Unknown client
-            // Geo restricted videos
-                // Video with a content ID claim that restricts the video to a certain set of countries
-                "This video contains content from": "contentIdClaimedVideo", // Unknown client
-                "The uploader has not made this video available in your country": "uploaderGeorestrictedVideo", // Unknown client
-            // Video being processed
-                "We're processing this video. Check back later": "videoBeingProcessed", // Unknown client
-            // VPN/Proxy
-                "VPN/Proxy Detected": "vpnProxy", // Unknown client
+            // // Youtube blockage
+            //     "Sign in to confirm you’re not a bot": "signInToConfirmBot",
+            // // Age restricted videos
+            //     "Sign in to confirm your age": "signInToConfirmAge",
+            // // Sensitive content videos
+            //     "The following content may contain suicide or self-harm topics": "selfHarmTopics",
+            // // Livestreams
+            //     "Offline.": "liveStreamOffline",
+            //     "This live event will begin in": "liveEventWillBegin",
+            //     "This live stream recording is not available": "liveStreamRecordingUnavailable",
+            // // Premieres
+            //     "Premiere will begin shortly": "premiere",
+            //     "Premieres in": "premiere",
+            // // Private videos
+            //     "Private video": "privateVideo", // WEB Client
+            //     "This video is private": "privateVideo", // MWEB Client
+            // // Unavailable videos
+            //     "Video unavailable": "videoUnavailable", // WEB Client
+            //     "This video is unavailable": "videoUnavailable", // MWEB Client
+            //     "This video is no longer available due to a copyright claim": "videoUnavailableCopyrightClaim", // Unknown client
+            //     "This video is no longer available because the uploader has closed their YouTube account": "videoUnavailableClosedYTAccount", // Unknown client
+            //     "This content can't be played on your mobile browser. Get the YouTube app to start watching": "videoUnplayableMobileBrowser", // MWEB Client maybe?
+            // // Removed videos
+            //     // Videos removed because of a violation of the community guidelines or TOS
+            //     "This video has been removed for violating YouTube's": "videoRemovedYt", // Unknown client
+            //     "This video has been removed by the uploader": "videoRemovedUploader", // Unknown client
+            // // Members only
+            //     "This video is available to this channel's members on level": "membersOnlyVideo", // Unknown client
+            //     "Join this channel from your computer or Android app to get access to members-only content like this video": "membersOnlyVideo", // Unknown client
+            // // Geo restricted videos
+            //     // Video with a content ID claim that restricts the video to a certain set of countries
+            //     "This video contains content from": "contentIdClaimedVideo", // Unknown client
+            //     "The uploader has not made this video available in your country": "uploaderGeorestrictedVideo", // Unknown client
+            // // Video being processed
+            //     "We're processing this video. Check back later": "videoBeingProcessed", // Unknown client
+            // // VPN/Proxy
+            //     "VPN/Proxy Detected": "vpnProxy", // Unknown client
         };
 
         let isKnownError = false;
@@ -314,18 +314,18 @@ export class Metrics {
 
         // deno-fmt-ignore
         const map: { [key: string]: keyof Error } = {
-            // Youtube blockage
-                "This helps protect our community": "thisHelpsProtectCommunity",
-            // Age restricted videos
-                "This video may be inappropriate for some users": "thisVideoMayBeInnapropiate",
-            // Sensitive content videos
-                "Viewer discretion is advised": "viewerDiscretionAdvised",
-            // Unavailable videos
-                "This video is no longer available because the YouTube account associated with this video has been terminated": "accountTerminated",
-            // Private videos
-                "If the owner of this video has granted you access": "privateVideo",
-            // VPN/Proxy
-                "To continue, turn off your VPN/Proxy. This will allow YouTube to locate the best content.": "vpnProxy",
+            // // Youtube blockage
+            //     "This helps protect our community": "thisHelpsProtectCommunity",
+            // // Age restricted videos
+            //     "This video may be inappropriate for some users": "thisVideoMayBeInnapropiate",
+            // // Sensitive content videos
+            //     "Viewer discretion is advised": "viewerDiscretionAdvised",
+            // // Unavailable videos
+            //     "This video is no longer available because the YouTube account associated with this video has been terminated": "accountTerminated",
+            // // Private videos
+            //     "If the owner of this video has granted you access": "privateVideo",
+            // // VPN/Proxy
+            //     "To continue, turn off your VPN/Proxy. This will allow YouTube to locate the best content.": "vpnProxy",
         };
 
         let isKnownError = false;
